@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+
+</head>
+
+<body>
+
+	<script>
+		window.onload = function () {
+			const boxEl = document.querySelector('.box')
+			alert(boxEl) // [object HTMLDivElement] 可以获取到dom, 因为window.onload是等到dom加载完毕之后才执行script
+		}
+	</script>
+
+	<!-- <script>
+		const boxEl = document.querySelector('.box')
+		alert(boxEl) // null, 获取不到dom,因为javascript遵循html文档的加载顺序,即自上而下的加载顺序
+	</script> -->
+
+
+	<div class="box">box</div>
+
+	<!-- <script>
+		const boxEl = document.querySelector('.box')
+		alert(boxEl) // 可以获取到dom [object HTMLDivElement]
+	</script> -->
+
+</body>
+
+</html>

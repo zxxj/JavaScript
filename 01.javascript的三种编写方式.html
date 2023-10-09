@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<!-- 1.写在HTML代码内 -->
+	<a href="https://www.baidu.com" onclick="alert('百度一下')">百度一下</a>
+	<a href="javascript:alert('百度一下')">百度一下</a>
+
+	<!-- 2.写在script元素中 -->
+	<a class="google" href="https://www.google.com">谷歌一下</a>
+	<script>
+		const googleEl = document.querySelector('.google')
+		googleEl.onclick = () => {
+			alert('谷歌一下')
+		}
+	</script>
+
+	<!-- 3.外部的script文件 -->
+	<a class="bing" href="https://www.bing.com">必应一下</a>
+	<script src="./js/bing.js"></script>
+
+</body>
+
+</html>
